@@ -21,6 +21,8 @@ struct ContentView: View {
         }
     }
     
+    
+    
     func makeCalls() {
         URLSession.shared.dataTask(with: URL(string: "https://www.google.com")!) { data, res, error in
             if let res = res {
